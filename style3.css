@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+.wholebody {
+    border: 20px;
+    margin: 20px; 
+    border-style:ridge;
+    border-radius: 10%;
+    background-color: antiquewhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: maroon;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 70px;
+}
+h2 {
+    color: maroon;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+body {
+    background-color: maroon;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+.cards {
+    height: 185px;
+    width: 135px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    transform-style: preserve-3d;
+    
+
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+#toggle:checked ~ #c1 {
+    animation: flip 0.5s  22s   forwards,
+               flip 0.5s 24s reverse forwards,
+               flip 0.5s 26s forwards,
+               flip 0.5s 28.5s reverse forwards,
+               flip 0.5s 30s forwards;
+
+}
+#toggle:checked ~ #c2 {
+    animation: flip 0.5s  7s   forwards;
+}
+#toggle:checked ~ #c3 {
+    animation: flip 0.5s  17s   forwards;
+    
+}
+#toggle:checked ~ #c4 {
+    animation: flip 0.5s 2s  forwards,
+               flip 0.5s 4s reverse forwards,
+               flip 0.5s 6s forwards;
+    
+}
+#toggle:checked ~ #c5 {
+    animation: flip 0.5s 3s   forwards,
+               flip 0.5s 4s reverse forwards,
+               flip 0.5s 14s forwards;
+    
+}
+#toggle:checked ~ #c6 {
+    animation: flip 0.5s  27s   forwards,
+               flip 0.5s 28.5s reverse forwards,
+               flip 0.5s 34s forwards;
+    
+}
+#toggle:checked ~ #c7 {
+    animation: flip 0.5s  31s   forwards;
+    
+}
+#toggle:checked ~ #c8 {
+    animation: flip 0.5s  9s   forwards,
+               flip 0.5s 11s reverse forwards,
+               flip 0.5s 13s forwards;
+    
+}
+#toggle:checked ~ #c9 {
+    animation: flip 0.5s  23s   forwards,
+               flip 0.5s 24s reverse forwards,
+               flip 0.5s 33s forwards;
+    
+}
+#toggle:checked ~ #c10 {
+    animation: flip 0.5s   10s  forwards,
+               flip 0.5s 11s reverse forwards,
+               flip 0.5s 19s forwards;
+    
+}
+#toggle:checked ~ #c11 {
+    animation: flip 0.5s  20s   forwards;
+    
+}
+#toggle:checked ~ #c12 {
+    animation: flip 0.5s   16s  forwards;
+    
+}
+label {
+    background: maroon;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+#label {
+    text-align: center;
+}
+.hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+@keyframes flip {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(180deg); }
+}
+@keyframes match {
+    from{transform:scale(1)}
+    to{transform:scale(1.2)}
+}
+
+.card-game {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    
+}
+.back-image {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: lightcyan;
+    color: purple;
+    overflow: hidden;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+}
+.front-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: lightseagreen;
+    color: #333;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+
+}

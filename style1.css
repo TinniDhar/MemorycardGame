@@ -1,0 +1,126 @@
+body {
+	background-color: maroon;
+	padding: 0px 8px 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wholebody{
+	border: 20px;
+	margin: 20px;
+	border-style: ridge;
+	border-radius: 10%;
+	background-color: antiquewhite;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+h1 {
+	color: white;
+	font-family: 'Courier New',Courier,monospace;
+	letter-spacing: 3px;
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+h2 {
+	color: white;
+	letter-spacing: 3px;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+}
+.title {
+	position: absolute;
+	top: 0;
+	font-family: 'Courier New', Courier, monospace;
+}
+.buttons {
+	position: relative;
+	top: 50px;
+}
+
+#game-button {
+  text-decoration: none;
+  color: white;
+  margin-top: 40px;
+  padding: 12px 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px white;
+  bottom: 50px;
+
+}
+#game-button:hover {
+	background-color: black;
+	box-shadow: 0px 0px 5px 2px white;
+}
+#summary {
+	color: white;
+	margin-top: 40px;
+  	padding: 12px 15px;
+  	border: 1px solid;
+  	border-radius: 5px;
+  	box-shadow: 0px 0px 3px white;
+	left: -300px;
+}
+#summary:hover {
+	background-color: black;
+	margin-top: 40px;
+	padding: 12px 15px;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 2px white;
+}
+
+
+.road{
+	height: 300px;
+  background: antiquewhite;
+  width: 120%;
+  margin-bottom: -10px;
+  
+}
+
+.cam{
+	width: 300px;
+	position: absolute;
+	top: 540px;
+	left: 0px;
+	animation-name: drive;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+.reel {
+	width: 120px;
+	position: relative;
+	top: -130px;
+	left: 420px;
+	animation: spin;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.reel2 {
+	width: 120px;
+	position: relative;
+	top: -250px;
+	left: -420px;
+	animation: spin;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+	from{transform: rotate(0deg)}
+	to{transform: rotate(360deg)}
+}
+@keyframes drive{
+	from{transform: translateX(-200px)}
+	to{transform: translateX(1500px)}
+}
