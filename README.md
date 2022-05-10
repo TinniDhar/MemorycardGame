@@ -1,2 +1,2 @@
 # MemorycardGame
-#### A memorycard Game using HTML and CSS only, no javaScript. 
+#### Designing a card matching game using only HTML and CSS. No Javascript. This project is to simulate a game without the use of javascript logic and make an interface that uses CSS Transitions, Transformations and Animation.
